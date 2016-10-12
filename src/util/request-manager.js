@@ -155,6 +155,7 @@ export default class RequestManager {
     params.method = params.method || 'GET';
     params.forever = true;
     params.retryAttempts = 0;
+    params.gzip = true;
 
     params.headers = Object.assign({
       'User-Agent': this.userAgent,
